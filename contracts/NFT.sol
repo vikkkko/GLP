@@ -21,10 +21,6 @@ contract NFT is
 
     CountersUpgradeable.Counter index;
 
-    constructor() OwnableUpgradeable() {
-
-    }
-
     function initialize(string memory uri) initializer external{
         __ERC721_init("Genesis LinkPass", "GLP");
         baseURI_ = uri;

@@ -21,10 +21,14 @@ const config: HardhatUserConfig = {
       }
     }
   },
-  defaultNetwork: 'goerli',
+  defaultNetwork: 'polygon',
   networks: {
     goerli: {
       url: `https://goerli.infura.io/v3/638c755c81fe495e85debe581520b373`,
+      accounts
+    },
+    polygon: {
+      url: `https://polygon-rpc.com`,
       accounts
     },
   }

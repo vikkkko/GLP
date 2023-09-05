@@ -16,7 +16,7 @@ async function main() {
     //deploy
     const n = await upgrades.deployProxy(
       nft,
-      [""]);
+      ["https://ipfs.io/ipfs/bafybeidgynar2hjzdcn2e6gnnf4j3ffm7dbpxaamdnjamefhpkkhow6ta4"]);
   
     await n.waitForDeployment();
     console.log("nft deployed to:", await n.getAddress());
